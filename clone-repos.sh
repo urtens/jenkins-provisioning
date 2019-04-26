@@ -2,10 +2,9 @@
 
 set -e
 
-JENKINS_HOME="/var/jenkins_home"
-JOBDSL_DIR="${JENKINS_HOME}/jobdsl"
 REPOS_FILE=${REPOS_FILE:-/usr/share/jenkins/data/repos.txt}
 TEMP_REPOS_DIR="/tmp/repos"
+JOBDSL_DIR="${TEMP_REPOS_DIR}/jobdsl"
 
 echo "$(date) START JENKINS SETUP"
 
